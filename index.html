@@ -23,16 +23,16 @@
                     <ul>
                         <li>
                             <label for="user-name">Your name</label>
-                            <input type="text" name="user-name" id="user-name">
+                            <input type="text" name="user-name" id="user-name" required>
                         </li>
                         <li>
 
                             <label for="useremail">Your email address</label>
-                            <input type="email" name="user-email" id="useremail">
+                            <input type="email" name="user-email" id="useremail" required>
                         </li>
                         <li>
                             <label for="userpassword">Your Password</label>
-                            <input type="password" name="user-password" id="userpassword">
+                            <input type="password" name="user-password" id="userpassword" required minlength="7">
                         </li>
                     </ul>
                 </section>
@@ -41,11 +41,12 @@
                     <ul>
                         <li>
                             <label for="userage">Your age</label>
-                            <input type="number" step="1" name="user-age" id="userage">
+                            <input type="number" step="1" name="user-age" id="userage" required min="18" max="100">
                         </li>
                         <li>
                             <label for="userbirthdate">Your birthdate</label>
-                            <input type="date" name="user-birthdate" id="userbirthdate">
+                            <input type="date" name="user-birthdate" id="userbirthdate" required min="2001-08-01"
+                                max="2013-02-01">
                         </li>
                         <li>
                             <label for="favorite-color">Your favorite color?</label>
@@ -68,15 +69,15 @@
                     <ul>
 
                         <li class="form-control">
-                            <input type="radio" name="verify" id="verify-text-message" value="text-message">
+                            <input type="radio" name="verify" id="verify-text-message" value="text-message" required>
                             <label for=" verify-text-message">Via text messages(SMS)</label>
                         </li>
                         <li class="form-control">
-                            <input type="radio" name="verify" id="verify-phone" value="phone">
+                            <input type="radio" name="verify" id="verify-phone" value="phone" required>
                             <label for="verify-phone">Via a phone call</label>
                         </li>
                         <li class="form-control">
-                            <input type="radio" name="verify" id="verify-email" value="email">
+                            <input type="radio" name="verify" id="verify-email" value="email" required>
                             <label for="verify-email">Via an email</label>
                         </li>
                     </ul>
@@ -102,7 +103,8 @@
                     </div>
                 </section>
                 <section>
-                    <button>Submit</button>
+                    <!-- <button type="reset">Clear</button> -->
+                    <button type="submit">Submit</button>
                 </section>
 
 
